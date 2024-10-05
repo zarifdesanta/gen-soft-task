@@ -1,0 +1,132 @@
+.home-section {
+  background-color: #ea2127;
+  padding-bottom: 61px;
+}
+
+.home-section .text {
+  /* padding-top: 146px; */
+  margin-left: 80px;
+  margin-bottom: -60px;
+
+  p {
+    font-family: "act-of-rejection";
+    color: #ffffff66;
+    font-size: 140px;
+    font-weight: 400;
+    margin: 0px;
+  }
+}
+
+.home-section .item {
+  transition: all 0.25s;
+}
+
+.home-section .item:hover {
+  transform: scale(1.01);
+}
+
+.home-section .slider {
+  display: flex;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.home-section .thumb {
+  width: 357px;
+  height: 397px;
+  border-radius: 12px;
+  box-shadow: 6px 6px 24px 0px #66424233;
+}
+
+.gg {
+}
+
+.home-section .name {
+  font-size: 16px;
+  line-height: 19.2px;
+  font-weight: 500;
+  color: white;
+  margin: 16px 0px;
+  font-family: "Inter";
+}
+
+.home-section .price {
+  display: flex;
+  gap: 12px;
+  font-family: "Inter";
+}
+
+.home-section .cur-price {
+  font-size: 20px;
+  line-height: 24x;
+  font-weight: 500;
+  color: #ffffffcc;
+  margin: 0px;
+}
+
+.home-section .prev-price {
+  font-size: 20px;
+  line-height: 24x;
+  font-weight: 500;
+  color: #ffffffcc;
+  text-decoration: line-through;
+  margin: 0px;
+}
+
+.carousel-container {
+  margin-left: 118px;
+}
+
+@media screen and (max-width: 900px) {
+  .carousel-container {
+    margin-left: 50px;
+  }
+
+  .home-section .text {
+    margin-left: 80px;
+    margin-bottom: -20px;
+    p {
+      font-size: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .carousel-container {
+    margin-left: 40px;
+  }
+
+  .home-section .text {
+    margin-left: 80px;
+    margin-bottom: -20px;
+    p {
+      font-size: 80px;
+    }
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .carousel-container {
+    margin-left: 110px;
+  }
+  .home-section .text {
+    margin-left: 80px;
+    margin-bottom: -50px;
+    p {
+      font-size: 120px;
+    }
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .carousel-container {
+    margin-left: 118px;
+  }
+  .home-section .text {
+    margin-left: 80px;
+    margin-bottom: -60px;
+    p {
+      font-size: 140px;
+    }
+  }
+}

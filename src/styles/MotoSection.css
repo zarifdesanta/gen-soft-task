@@ -1,0 +1,46 @@
+.moto-section {
+  background: linear-gradient(120deg, #ec3339, #bb1117);
+}
+
+.moto-section .sub-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moto-section .sub-section .left-items {
+  img {
+    margin-left: -50px;
+    margin-bottom: -130px;
+  }
+
+  p {
+    text-transform: uppercase;
+    color: white;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+  }
+}
+
+.moto-section .sub-section .right-items {
+  img {
+    margin-top: -120px;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .moto-section .sub-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .moto-section .sub-section .right-items {
+    img {
+      margin-top: -60px;
+      width: 471px;
+    }
+  }
+}

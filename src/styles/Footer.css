@@ -1,0 +1,207 @@
+.footer {
+  background-color: black;
+}
+
+.footer .sub-section {
+}
+
+.footer .sub-section .logo {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 80px;
+    margin-right: 18px;
+  }
+
+  p {
+    font-size: 112px;
+    font-weight: 800;
+    color: white;
+    margin: 0px;
+  }
+}
+
+.footer .sub-section .grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 48px;
+
+  .subscribe {
+    display: flex;
+    flex-direction: column;
+
+    p {
+      color: white;
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 28.8px;
+      margin: 0px;
+      margin-bottom: 48px;
+    }
+
+    .email-btn {
+      padding: 12px;
+      border-radius: 12px;
+      border-style: solid;
+      border: 1px solid #ffffff80;
+      background-color: transparent;
+      color: white;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 24px;
+      margin-bottom: 12px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .email-btn:hover {
+      color: black;
+      background-color: white;
+      box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.678);
+    }
+
+    .sub-btn {
+      padding: 12px;
+      border-radius: 12px;
+      border-style: solid;
+      border: 1px solid white;
+      background-color: white;
+      color: #222222;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19.2px;
+      cursor: pointer;
+      transition: all 0.25s;
+    }
+
+    .sub-btn:hover {
+      color: white;
+      background-color: #ec3339;
+      border-color: #ec3339;
+      box-shadow: 0px 0px 10px rgba(255, 45, 45, 0.678);
+    }
+  }
+
+  .header {
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    margin: 0px;
+    margin-bottom: 24px;
+  }
+
+  .links {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-family: "Inter";
+
+    a {
+      color: #ffffffcc;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-decoration: none;
+      transform: all 0.5s;
+    }
+
+    a:hover {
+      color: white;
+    }
+  }
+
+  .contact-us {
+    color: #ffffffcc;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Inter";
+
+    img {
+      margin-right: 12px;
+    }
+
+    .social-links {
+      display: flex;
+      gap: 12px;
+    }
+  }
+}
+
+.footer .all-rights-reserved-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 120px;
+  padding-bottom: 44px;
+  p {
+    margin: 0px;
+    color: #ffffffcc;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: "Inter";
+  }
+
+  .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer .sub-section .logo {
+    p {
+      font-size: 50px;
+    }
+    img {
+      width: 50px;
+    }
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer .sub-section .logo {
+    p {
+      font-size: 112px;
+    }
+    img {
+      width: 80px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer .sub-section .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer .all-rights-reserved-row {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .footer .sub-section .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .footer .sub-section .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .footer .sub-section .grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
